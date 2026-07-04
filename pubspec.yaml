@@ -1,0 +1,35 @@
+name: totalizer
+description: A powerful multi-functional calculator suite.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  provider: ^6.1.1
+  google_fonts: ^6.1.0
+  math_expressions: ^2.5.0
+  intl: ^0.19.0
+  google_generative_ai: ^0.4.0
+  lucide_icons: ^0.257.0 
+  google_mobile_ads: ^5.1.0
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/logo/logo.png"
+  min_sdk_android: 21
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/logo/logo.png
+  # fonts অংশটি পুরোপুরি মুছে ফেলা হয়েছে কারণ আমরা google_fonts ব্যবহার করছি
